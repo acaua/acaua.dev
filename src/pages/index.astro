@@ -7,52 +7,47 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Acauã Sperl de Faria">
-  <main class="relative min-h-screen overflow-hidden">
-    <!-- Diagonal Split Background -->
-    <div class="absolute inset-0 bg-gradient-to-br from-background to-background/95"></div>
+  <!-- Content -->
+  <main class="flex min-h-screen items-center justify-center p-4">
+    <div class="grid max-w-4xl grid-cols-1 gap-x-14 gap-y-8 md:grid-cols-2">
+      <!-- Image - Left Side -->
+      <div class="flex w-3xs items-center justify-center">
+        <Image
+          src={hiImage}
+          alt='Black and white drawing from Daniel Jonston of an animal that looks like an alien frog with "hi, how are you" written on top'
+          class="h-auto max-w-full"
+          width={782}
+          height={703}
+        />
+      </div>
 
-    <!-- Content -->
-    <div class="relative flex min-h-screen items-center justify-center p-4">
-      <div class="grid max-w-4xl grid-cols-1 gap-x-14 gap-y-8 md:grid-cols-2">
-        <!-- Image - Left Side -->
-        <div class="flex items-center justify-center w-3xs">
-          <Image
-            src={hiImage}
-            alt="Decorative drawing"
-            class="h-auto max-w-full"
-            width={782}
-            height={703}
-          />
-        </div>
+      <!-- Text/Links - Right Side -->
+      <div class="flex flex-col items-start justify-center md:justify-start md:pt-2">
+        <!-- Content container that stays left aligned -->
+        <div class="flex flex-col space-y-6 md:space-y-8">
+          <h1 class="font-[PT_Mono] text-3xl tracking-wide">
+            Acauã<br />Sperl de Faria
+          </h1>
 
-        <!-- Text/Links - Right Side -->
-        <div class="flex flex-col items-start justify-center md:pt-2 md:justify-start">
-          <!-- Content container that stays left aligned -->
-          <div class="flex flex-col space-y-6 md:space-y-8">
-            <h1 class="text-3xl font-extralight tracking-wide font-[PT_Mono]">
-              Acauã<br />Sperl de Faria
-            </h1>
-
-            <div class="flex space-x-4">
-              <a
-                href="https://github.com/acaua"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                class="text-foreground/60 transition-colors duration-300 hover:text-foreground"
-              >
-                <Github class="h-6 w-6" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/acauafaria"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                class="text-foreground/60 transition-colors duration-300 hover:text-foreground"
-              >
-                <Linkedin class="h-6 w-6" />
-              </a>
-            </div>
+          <div class="flex space-x-4">
+            <a
+              href="https://github.com/acaua"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              class="text-foreground/60 transition-colors duration-300 hover:text-foreground"
+            >
+              <Github class="h-6 w-6" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/acauafaria"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              class="text-foreground/60 transition-colors duration-300 hover:text-foreground"
+            >
+              <Linkedin class="h-6 w-6" />
+            </a>
           </div>
         </div>
       </div>
