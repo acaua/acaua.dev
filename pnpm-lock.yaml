@@ -14,6 +14,9 @@ importers:
       '@astrojs/react':
         specifier: ^4.2.0
         version: 4.2.0(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(jiti@2.4.2)(lightningcss@1.29.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@fontsource/pt-mono':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@tailwindcss/vite':
         specifier: ^4.0.8
         version: 4.0.8(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
@@ -35,9 +38,6 @@ importers:
       lucide-astro:
         specifier: ^0.477.0
         version: 0.477.0(astro@5.4.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.8)(typescript@5.7.3))
-      lucide-react:
-        specifier: ^0.475.0
-        version: 0.475.0(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -731,6 +731,9 @@ packages:
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+
+  '@fontsource/pt-mono@5.2.5':
+    resolution: {integrity: sha512-FM/vqh/W0I3v2WygNm5pZeS+5bbgUcnbjmwOwem7sBsEpJ/BkYiB/VFHIMD36XsTGkQ7vMApAhEXrZMID9I10A==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1722,11 +1725,6 @@ packages:
     resolution: {integrity: sha512-H9ViWaQi99UODF0fyAGLR3UdGdy9ZMCTR1wEw52MmeFt2R3cV/ceQi7PBSlwN78L8K/8+46qmrLahe+2uBVa9A==}
     peerDependencies:
       astro: '>=2.7.1'
-
-  lucide-react@0.475.0:
-    resolution: {integrity: sha512-NJzvVu1HwFVeZ+Gwq2q00KygM1aBhy/ZrhY9FsAgJtpB+E4R7uxRk9M2iKvHa6/vNxZydIB59htha4c2vvwvVg==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
@@ -3047,6 +3045,8 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
+  '@fontsource/pt-mono@5.2.5': {}
+
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.0.4
@@ -4065,10 +4065,6 @@ snapshots:
   lucide-astro@0.477.0(astro@5.4.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.8)(typescript@5.7.3)):
     dependencies:
       astro: 5.4.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.8)(typescript@5.7.3)
-
-  lucide-react@0.475.0(react@19.0.0):
-    dependencies:
-      react: 19.0.0
 
   magic-string@0.25.9:
     dependencies:
