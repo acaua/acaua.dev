@@ -16,7 +16,7 @@ importers:
         version: 4.2.0(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(jiti@2.4.2)(lightningcss@1.29.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tailwindcss/vite':
         specifier: ^4.0.8
-        version: 4.0.8(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))
+        version: 4.0.8(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
       '@types/react':
         specifier: ^19.0.10
         version: 19.0.10
@@ -32,6 +32,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      lucide-astro:
+        specifier: ^0.477.0
+        version: 0.477.0(astro@5.4.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.8)(typescript@5.7.3))
       lucide-react:
         specifier: ^0.475.0
         version: 0.475.0(react@19.0.0)
@@ -1715,6 +1718,11 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
+  lucide-astro@0.477.0:
+    resolution: {integrity: sha512-H9ViWaQi99UODF0fyAGLR3UdGdy9ZMCTR1wEw52MmeFt2R3cV/ceQi7PBSlwN78L8K/8+46qmrLahe+2uBVa9A==}
+    peerDependencies:
+      astro: '>=2.7.1'
+
   lucide-react@0.475.0:
     resolution: {integrity: sha512-NJzvVu1HwFVeZ+Gwq2q00KygM1aBhy/ZrhY9FsAgJtpB+E4R7uxRk9M2iKvHa6/vNxZydIB59htha4c2vvwvVg==}
     peerDependencies:
@@ -3291,13 +3299,13 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.0.8
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.8
 
-  '@tailwindcss/vite@4.0.8(vite@6.1.0(jiti@2.4.2)(lightningcss@1.29.1))':
+  '@tailwindcss/vite@4.0.8(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))':
     dependencies:
       '@tailwindcss/node': 4.0.8
       '@tailwindcss/oxide': 4.0.8
       lightningcss: 1.29.1
       tailwindcss: 4.0.8
-      vite: 6.1.0(jiti@2.4.2)(lightningcss@1.29.1)
+      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -4053,6 +4061,10 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+
+  lucide-astro@0.477.0(astro@5.4.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.8)(typescript@5.7.3)):
+    dependencies:
+      astro: 5.4.0(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.8)(typescript@5.7.3)
 
   lucide-react@0.475.0(react@19.0.0):
     dependencies:
