@@ -7,15 +7,16 @@ import ogImage from "../assets/ogimage.jpeg";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Acauã Sperl de Faria"
-        description="Acauã Sperl de Faria website"
-        openGraph={{
-          basic: {
-            title: "Acauã Sperl de Faria",
-            type: "website",
-            image: ogImage.src,
-          }
-        }}
+<Layout
+  title="Acauã Sperl de Faria"
+  description="Acauã Sperl de Faria website"
+  openGraph={{
+    basic: {
+      title: "Acauã Sperl de Faria",
+      type: "website",
+      image: ogImage.src,
+    },
+  }}
 >
   <!-- Content -->
   <main class="flex min-h-screen items-center justify-center p-4">
@@ -32,7 +33,9 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <!-- Text/Links - Right Side -->
-      <div class="flex flex-col items-start justify-center md:justify-start md:pt-2">
+      <div
+        class="flex flex-col items-start justify-center md:justify-start md:pt-2"
+      >
         <div class="flex flex-col space-y-6 md:space-y-8">
           <h1 class="font-[PT_Mono] text-3xl tracking-wide">
             Acauã<br />Sperl de Faria
