@@ -14,6 +14,17 @@
   "observability": {
     "enabled": true,
   },
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "acaua.dev",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.acaua.dev",
+      "custom_domain": true,
+    },
+  ],
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -36,12 +47,6 @@
    * Note: Use secrets to store sensitive data.
    * https://developers.cloudflare.com/workers/configuration/secrets/
    */
-
-  /**
-   * Static Assets
-   * https://developers.cloudflare.com/workers/static-assets/binding/
-   */
-  // "assets": { "directory": "./public/", "binding": "ASSETS" },
 
   /**
    * Service Bindings (communicate between multiple Workers)
