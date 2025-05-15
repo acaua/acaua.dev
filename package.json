@@ -16,13 +16,13 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.2.1",
-    "@astrojs/react": "^4.2.0",
+    "@astrojs/cloudflare": "^12.5.3",
+    "@astrojs/react": "^4.2.7",
     "@fontsource/pt-mono": "^5.2.5",
     "@tailwindcss/vite": "^4.0.8",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "astro": "^5.4.0",
+    "astro": "^5.7.13",
     "astro-seo": "^0.8.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
